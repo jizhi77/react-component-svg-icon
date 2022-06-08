@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import SvgIcon from "./components/SvgIcon";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SvgIcon name='airbnb' style={{fontSize: 100}} color='red'/>
+      <SvgIcon name='500px' style={{fontSize: 10}} color='green'/>
+      <SvgIcon name='logo'/>
     </div>
   );
 }
